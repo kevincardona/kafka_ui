@@ -1,7 +1,7 @@
 # Kafka UI
 Kafka UI was created to provide a very simple interface to manually produce messages onto a Kafka topic. It's sorta like <a href="https://www.getpostman.com/">Postman</a> but for Kafka. 
 
-Currently it is just a webapp, however I plan on converting it to an <a href="https://electronjs.org/">Electron</a> app soon enough.
+Kafka UI was created using <a href="https://electronjs.org/">Electron</a>.
 
 ## Dependencies
 In order to setup and run Kafka UI you must have a node package manager installed as well as node.

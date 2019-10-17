@@ -7,26 +7,27 @@
         <img src='logo.png' alt="" class="header-logo"></img>
         <h1>Kafkui</h1>
         <img src='logo.png' alt="" class="header-logo-backwards"></img>
-      </header>
-      <div class="App-Body">
-        <div class="Producer">
-          <h1>Producer</h1>
-          <h4>Kafka Broker</h4>
-          <input id="broker" type="text" placeholder="http://localhost:9092"/>
-          <h4>Kafka Topic</h4>
-          <input id="topic" type="text"/>
+    </header>
+    <div class="App-Body">
+      <div class="Producer">
+        <h1>Producer</h1>
+        <h4>Kafka Broker</h4>
+        <input id="broker" type="text" placeholder="http://localhost:9092"/>
+        <h4>Kafka Topic</h4>
+        <input id="topic" type="text"/>
 
-          <h4>Message</h4>
-          <textarea id="message" class="dataEntry" type="text"></textarea>
-          <br><br>
-          <button id="produce" class="submit" onClick={this.produce}>Produce</button>
-        </div>
-        <div class="history">
-          <h2>History</h2>
-          <ul id="history">
-          </ul>
-        </div>
+        <h4>Message</h4>
+        <textarea id="message" class="dataEntry" type="text"></textarea>
+        <br><br>
+        <button id="produce" class="submit" onClick={this.produce}>Produce</button>
       </div>
-      <script src="js/index.js"></script>
+      <div class="history">
+        <h2>History</h2>
+        <ul id="history">
+        </ul>
+      </div>
+    </div>
+    <script src="../src/renderer/main.js"></script>
+    <script src="../src/renderer/tab.js"></script>
   </body>
 </html>
