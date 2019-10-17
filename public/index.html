@@ -3,31 +3,36 @@
     <link rel="stylesheet" href="styles/index.css"></link>
   </head>
   <body>
-    <header class="App-header">
-        <img src='logo.png' alt="" class="header-logo"></img>
-        <h1>Kafkui</h1>
-        <img src='logo.png' alt="" class="header-logo-backwards"></img>
+    <header class="block" id="producer">
+      <h2>Produce Message</h2>
+      <div class="row space-between">
+        <div>
+          <h5>Broker</h5>
+          <input id="broker" class="input-short" type="text" placeholder="http://localhost:9092"/>
+        </div>
+        <div>
+          <h5>Topic</h5>
+          <input id="topic" class="input-short" type="text" placeholder=""/>
+        </div>
+      </div>
+      <h4>Message</h4>
+      <textarea id="message" class="input-long" type="text"></textarea>
+      <button id="submit" class="submit">Send</button>
+      <br>
+      <br>
+      <a class="link" href="#history">History ⤵</a>
+    </div>    
     </header>
-    <div class="App-Body">
-      <div class="Producer">
-        <h1>Producer</h1>
-        <h4>Kafka Broker</h4>
-        <input id="broker" type="text" placeholder="http://localhost:9092"/>
-        <h4>Kafka Topic</h4>
-        <input id="topic" type="text"/>
 
-        <h4>Message</h4>
-        <textarea id="message" class="dataEntry" type="text"></textarea>
-        <br><br>
-        <button id="produce" class="submit" onClick={this.produce}>Produce</button>
-      </div>
-      <div class="history">
-        <h2>History</h2>
-        <ul id="history">
-        </ul>
-      </div>
-    </div>
-    <script src="../src/renderer/main.js"></script>
+    <header class="block">
+      <a class="link" href="#producer">Producer ⤴</a>
+      <h2>History</h2>
+      <ul id="history">
+        <br>No History
+      </ul>
+    </header>
+
+    <script src="../src/renderer/index.js"></script>
     <script src="../src/renderer/tab.js"></script>
   </body>
 </html>

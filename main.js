@@ -1,5 +1,6 @@
 const {app, BrowserWindow, ipcMain} = require('electron')
 var kafka = require('kafka-node');
+var path = require('path')
 
 function createWindow () {
   let win = new BrowserWindow({
@@ -7,11 +8,11 @@ function createWindow () {
     height: 600,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    icon: path.join(__dirname, './public/icons/64x64.png')
   })
 
-  win.loadFile('static/index.html')
-  win.webContents.openDevTools()
+  win.loadFile('public/index.html')
 }
 
 ipcMain.on('produce-message', (event, data) => {
