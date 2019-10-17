@@ -4,12 +4,13 @@ var path = require('path')
 
 function createWindow () {
   let win = new BrowserWindow({
+    title: "Kafka UI",
     width: 800,
     height: 600,
     webPreferences: {
       nodeIntegration: true
     },
-    icon: path.join(__dirname, './public/icons/64x64.png')
+    icon: path.join(__dirname, "./public/icons/64x64.png")
   })
 
   win.loadFile('public/index.html')
