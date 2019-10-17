@@ -1,0 +1,137 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #8c9098;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px);
+  color: rgba(255, 255, 255, 0.865);
+}
+
+.header-logo {
+  height: 50px;
+}
+.header-logo-backwards {
+  height: 50px;
+  transform: rotate(180deg);
+}
+
+.App-Body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Producer {
+  font-size: 12px;
+  color: rgb(23, 23, 23);
+  width: 75vw;
+  height: 100%;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  width: 250px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.dataEntry {
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.submit {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  height: 30px;
+  width: 100px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(74, 147, 74);
+}
+
+.submit:hover {
+  background-color: rgb(54, 106, 54);
+}
+
+.submit:active {
+  transform: scale(0.95);
+}
+
+.history {
+  align-content: center;
+  text-align: center;
+  width: 50vw;
+  height: 100%;
+}
+
+#history:nth-child(1) {
+  background-color: #a8acb3;
+}
+
+h4 {
+  margin: 5px;
+}
+
+h3 {
+  margin: 2px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  height: 20em;
+  list-style-type:none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+li {
+  list-style-type:none;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+button {
+  overflow-x: hidden;
+}
+
+.history-item {
+  width: 100%;
+}
