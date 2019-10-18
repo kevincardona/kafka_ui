@@ -51,7 +51,6 @@ a {
 ul {
   padding: 0;
   margin: 0;
-  height: 20em;
   list-style-type:none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -65,9 +64,10 @@ li {
 }
 
 .block {
+  position: relative;
   background-color: #282c34;
   padding: 10px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,21 +94,6 @@ li {
   justify-content: flex-end;
 }
 
-
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.producer {
-  font-size: 12px;
-  color: rgb(23, 23, 23);
-  width: 75vw;
-  height: 100%;
-}
-
 .input-short {
   margin-left: 10px;
   margin-right: 10px;
@@ -128,7 +113,6 @@ li {
 .submit {
   height: 30px;
   width: 175px;
-  color: rgb(255, 255, 255);
   background-color: rgb(74, 147, 74);
 }
 
@@ -138,20 +122,4 @@ li {
 
 .submit:active {
   transform: scale(0.95);
-}
-
-.link {
- width: 100px;
- height: 100px;
-}
-
-#history {
-  align-content: center;
-  text-align: center;
-  overflow: scroll;
-}
-
-#history button {
-  overflow-x: hidden;
-  width: 100vw;
 }

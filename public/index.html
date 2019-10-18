@@ -1,38 +1,43 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="styles/index.css"></link>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
   </head>
   <body>
-    <header class="block" id="producer">
-      <h2>Produce Message</h2>
-      <div class="row space-between">
-        <div>
-          <h5>Broker</h5>
-          <input id="broker" class="input-short" type="text" placeholder="http://localhost:9092"/>
-        </div>
-        <div>
-          <h5>Topic</h5>
-          <input id="topic" class="input-short" type="text" placeholder=""/>
-        </div>
-      </div>
-      <h4>Message</h4>
-      <textarea id="message" class="input-long" type="text"></textarea>
-      <button id="submit" class="submit">Send</button>
-      <br>
-      <br>
-      <a class="link" href="#history">History ⤵</a>
-    </div>    
-    </header>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    <header class="block">
-      <a class="link" href="#producer">Producer ⤴</a>
-      <h2>History</h2>
-      <ul id="history">
-        <br>No History
-      </ul>
-    </header>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-    <script src="../src/renderer/index.js"></script>
-    <script src="../src/renderer/tab.js"></script>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
