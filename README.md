@@ -9,9 +9,10 @@ Kafka UI was created to provide a very simple interface to manually produce mess
 Kafka UI was created using <a href="https://electronjs.org/">Electron</a>.
 
 ## Dependencies
-In order to setup and run Kafka UI you must have a node package manager installed as well as node.
+In order to setup and run Kafka UI you must have a node package manager installed
 
 ## Running
 To install dependencies `yarn install`<br>
 To run Kafka UI `yarn start`<br>
 To build a binary `yarn dist`<br>
+To push a release `yarn ship`<br>
